@@ -9,7 +9,8 @@ console.log("chaval");
 
 
 
-int opcion = scanner.nextInt();
+int const nextInt = scanner.nextInt;
+opcion = nextInt();
 double resultado = 0;
 
 switch (opcion) {
