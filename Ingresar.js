@@ -5,3 +5,4 @@ var num1, num2, resultado=0;
 
  document.write('este es num1',num1);
  document.write('este es num2',num2);
+ document.write("hola lo estoy hackeando");
