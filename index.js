@@ -9,8 +9,16 @@ console.log("chaval");
 
 
 
-int const nextInt = scanner.nextInt;
-opcion = nextInt();
+
+
+
+
+
+
+
+
+
+int opcion = eleccion;
 double resultado = 0;
 
 switch (opcion) {
