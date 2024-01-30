@@ -1,4 +1,6 @@
-function resta(num1, num2) {
+resta = function(num1, num2) {
     
     return num1 - num2;
 }
+
+export default resta;
