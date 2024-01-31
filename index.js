@@ -1,4 +1,4 @@
-import {ingresar} from "./ingresar.js"
+import {ingresar} from "/ingresar.js"
 import calculadora from "./calculadora.js"
 import menu from "./menu.js"
 
