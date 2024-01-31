@@ -1,34 +1,18 @@
-import {ingresar} from "./ingresar.js"
-import calculadora from "./calculadora.js"
-import menu from "./menu.js"
+const prompt = require("./questionAsync.cjs");
 
+async function main()
+{
 
-console.log("Esta es una calculadora");
+    console.log("Esta es una calculadora");
 
-opcion = menu();
-numeros = ingresar();
-calculadora(numeros, opcion)
+    let numeros = [
+        await prompt("Ingresa número 1: "),
+        await prompt("Ingresa número 2: "),
+    ]
 
-//args = process.argv.slice(2);
-// Parametro 1: tipo de operacion; suma, resta, etc.
-// Parametro 2: num1
-// Parametro 3: num2
-
-/* function isNumeric(value) {
-    return /^\d+$/.test(value);
-  } */
-
-/* if (args.length == 3) {
+    let opciones = await prompt("Ingresa el tipo de operacion");
     
-    for(i = 1; i < 3; i++){
-        if(!isNumeric(args[i])){
-            console.log(`No es un numero: ${args[i]}`);
-        }
-    }
+    console.log([numeros, opciones]);
+}
 
-
-    // Aqui ya puedo escribir la calculadora
-
-    
-
-} */
+main();
