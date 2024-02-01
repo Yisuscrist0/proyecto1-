@@ -4,4 +4,4 @@ menu = function(){
     return opcion;
 }
 
-export default menu
+module.exports = menu;

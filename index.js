@@ -1,4 +1,5 @@
 const prompt = require("./questionAsync.cjs");
+const calculadora = require("./calculadora.js");
 
 async function main()
 {
@@ -10,9 +11,12 @@ async function main()
         await prompt("Ingresa número 2: "),
     ]
 
-    let opciones = await prompt("Ingresa el tipo de operacion");
+    let opciones = await prompt("Ingresa el tipo de operacion: ");
     
     console.log([numeros, opciones]);
+    module.exports = opciones;
+    module.exports = numeros;
+
 }
 
 main();

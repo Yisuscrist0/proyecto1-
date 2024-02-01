@@ -1,12 +1,13 @@
+const opciones = require("./index.js");
+const numeros = require("./index.js");
+const sumar = require("./suma.js");
+const restar = require("./resta.js");
+const multiplicacion = require("./multiplicar.js");
+const dividir = require("./dividir.js");
 
-import sumar from "./suma.js";
-import resta from "./resta.js";
-import multiplicar from "./multiplicar.js";
-import dividir from "./dividir.js";
-
-calculadora = function(numeros, opcion){
+calculadora = function(numeros, opciones){
     let resultado = 0;
-    switch(opcion){
+    switch(opciones){
         case "1":
             resultado = sumar(numeros[0], numeros[1]);
             break;
@@ -26,4 +27,4 @@ calculadora = function(numeros, opcion){
     console.log(`Su resultado es ${resultado}`)
 }
 
-export default calculadora;
+module.exports = calculadora;
