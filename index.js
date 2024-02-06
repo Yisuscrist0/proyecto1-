@@ -1,22 +1,18 @@
-const prompt = require("./questionAsync.cjs");
+const menu = require("./menu.js");
+const ingesta= require("./ingesta.js");
 const calculadora = require("./calculadora.js");
+
 
 async function main()
 {
 
-    console.log("Esta es una calculadora");
+    console.log("========= Esta es una calculadora ===========");
 
-    let numeros = [
-        await prompt("Ingresa número 1: "),
-        await prompt("Ingresa número 2: "),
-    ]
+    let opcion = await menu();
 
-    let opciones = await prompt("Ingresa el tipo de operacion: ");
-    
-    console.log([numeros, opciones]);
-    module.exports = opciones;
-    module.exports = numeros;
+    let numeros = await ingesta();
 
+    calculadora(numeros,opcion)
 }
 
 main();
