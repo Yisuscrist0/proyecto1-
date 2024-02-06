@@ -3,6 +3,7 @@ import sumar from "./suma.js";
 import resta from "./resta.js";
 import multiplicar from "./multiplicar.js";
 import dividir from "./dividir.js";
+import potencia from "./potencia.js";
 
 calculadora = function(numeros, opcion){
     let resultado = 0;
@@ -18,6 +19,9 @@ calculadora = function(numeros, opcion){
         break;
         case "4":
             resultado = dividir(numeros[0], numeros[1]);
+        break;
+        case "5":
+            resultado = potencia(numeros[0], numeros[1]);
         break;
         default:
             console.log("No hay una operacion asociada a la opcion seleccionada");
