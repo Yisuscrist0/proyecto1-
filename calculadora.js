@@ -4,6 +4,7 @@ const sumar = require("./suma.js");
 const resta = require("./resta.js");
 const multiplicar = require("./multiplicar.js");
 const dividir = require("./dividir.js");
+const potencia = require("./potencia.js");
 
 calculadora = function(numeros, opcion){
     let resultado = 0;
@@ -21,6 +22,9 @@ calculadora = function(numeros, opcion){
         break;
         case "4":
             resultado = dividir(num1, num2);
+        break;
+        case "5":
+            resultado = potencia(num1, num2);
         break;
         default:
             console.log("No hay una operacion asociada a la opcion seleccionada");
