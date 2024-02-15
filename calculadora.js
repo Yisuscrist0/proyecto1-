@@ -31,6 +31,17 @@ calculadora = function(numeros, opcion){
     }
 
     console.log(`Su resultado es ${resultado}`)
+
+
+
+
+
+
+
+
+    
+    return resultado;
+    
 }
 
 module.exports = calculadora;
